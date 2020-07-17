@@ -1,5 +1,7 @@
 module KRLS
+using LinearAlgebra
 
-greet() = print("Hello World!")
-
+include("kernel.jl")
+include("filter.jl")
+include("sim_env.jl")
 end # module
