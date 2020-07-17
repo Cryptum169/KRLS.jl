@@ -39,7 +39,7 @@ function kernel(input::Array, dim::Int, mode::Char, mDict::Array)
         output = output[1:dim, :];
     elseif mode == '4'
         dist_var = 0.75;
-        (~, c) = size(mDict);
+        c = size(mDict, 2);
         if (c < 2)
             add_dim = 0;
         else
