@@ -21,7 +21,8 @@ mutable struct KRLSFilter
         ktt = vx * vx'
         mKinv = 1 ./ ktt
         vAlpha = vx * vy'
-        mP = eye(length(vx))
+        # mP = eye(length(vx))
+        mP = I
         mDict = vx
         m = length(vx)
         new(mKinv, vAlpha, mP, mDict, m, mode, params)
